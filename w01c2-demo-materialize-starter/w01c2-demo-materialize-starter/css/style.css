@@ -1,0 +1,118 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: rgba(255,255,255,.9);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #ffffff;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+    .btnS{
+    top: 0px;
+    left: 0px;
+  }
+  
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .header{
+    font-size: 30px;
+}
+  .btnS{
+    top: 0px;
+    left: 0px;
+  }
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+div.parallax{
+  opacity: 0.7;
+  filter: brightness(90%);
+}
+.header{
+  text-align: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: #fff3db;
+  text-shadow: 2px 3px 6px rgba(141, 61, 61, 0.534);
+}
+.navBar{
+  background-color: #ba7474;  
+}
+.btnS{
+  padding: 15px 30px;
+  background-color: #ba7474;  
+  color: white;
+  position: relative;
+  top: 70px;
+  left: 20px;
+  text-shadow: 1px 1px 2px rgba(141, 61, 61, 0.534);
+}
+#cupLogo{
+  height: 55px;
+  width: auto;
+  margin-top: 2px;
+
+}
+.icon{
+position: relative;
+right: auto;
+left: 30%;
+width: 120px;
+height: 100px;
+}
+p{
+  text-align: center;
+}
+.catch{
+  text-align: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  sticky: bottom;
+  color: rgba(141, 61, 61, 0.534);
+  text-shadow: 2px 3px 6px rgba(141, 61, 61, 0.145);
+  font-size: 40px;
+}
