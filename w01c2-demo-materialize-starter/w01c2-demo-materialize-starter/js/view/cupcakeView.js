@@ -1,10 +1,22 @@
-class cupcakeView{
+export class CupcakeView{
     constructor(){
-        this.breadImput = document.querySelector("#input-bread img");
-        this.frostinput = document.querySelector('#input-frosting img');");
-        this.decorinput = document.querySelector("#div-animal img");
+        this.breadSelect = document.querySelector('#bread');
+        this.icingSelect = document.querySelector('#icing');
+        this.decorSelect = document.querySelector('#decor');
+        
+        this.breadImage = document.querySelector("#breadImg");   // FIXED
+        this.icingImage = document.querySelector("#icingImg");   // FIXED
+        this.decorImage = document.querySelector("#decorImg");   // FIXED
     }
-    renderCupcake(bread, frosting, decor){
-        let imgSrc = "media/${bread}-cupcake.png";
+
+    renderCupcake(bread, icing, decor){
+        
+        let breadImgSrc = bread ? `../../images/${bread}.png` : "";
+        let icingImgSrc = icing ? `../../images/${icing}.png` : "";
+        let decorImgSrc = decor ? `../../images/${decor}.png` : "";
+
+        this.breadImage.src = breadImgSrc;
+        this.icingImage.src = icingImgSrc;
+        this.decorImage.src = decorImgSrc;
     }
 }

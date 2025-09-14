@@ -4,7 +4,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Sugar Cup Shop</title>
+  <!--
+  DISCLAIMER--
+  MOST OF THE CONTENT ON THIS PAGE IS AI-GENERATED.
+  ONLY THE CONTENT IS AI GENERATED.(images, icons, text.)
+  CSS, JS, AND HTML STRUCTURE IS EITHER FROM MATERIALIZE TEMPLATE OR CREATED BY ME.
+  -->
+
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +22,7 @@
         <div class="navbar-fixed">
             <nav class="navBar">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo center"><img src="images/cupLogo.webp" alt="Cupcake Logo Picture" id="cupLogo"></a>
+                    <a href="body" class="brand-logo center"><img src="images/cupLogo.webp" alt="Cupcake Logo Picture" id="cupLogo"></a>
                     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#about-us">About Us</a></li>
@@ -42,7 +49,7 @@
           <h5 class="header col s12 light">One bite of a Sugar Cup Shop cupcake, and you'll understand why happiness is frosted.</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btnS">Get Started</a>
+          <a href="#shopping-cart" id="download-button" class="btnS">Get Started</a>
         </div>
         <br><br>
 
@@ -98,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/cupcake-2.png" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img id="snapTo" src="images/cupcake-2.png" alt="Unsplashed background img 2"></div>
   </div>
 
     <!-- SHOPPING CART -->
@@ -114,26 +121,24 @@
                 <div class="col s12 m4">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Select Your Item</h4>
-                    <label>Label</label>
-                    <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                    <label>Bread</label>
+                    <select name="bread" id="bread" class="browser-default">
+                        <option value="" disabled selected>Choose Type of Bread</option>
+                        <option value="breadVanilla">Vanilla</option>
+                        <option value="breadChocolate">Chocolate</option>
+                        <option value="breadVelvet">Red velvet</option>
                     </select>
-                    <label>Label</label>
-                    <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                    <label>Icing</label>
+                    <select name="icing" id="icing" class="browser-default">
+                        <option value="" disabled selected>Choose Type of Icing</option>
+                        <option value="icingVanilla">Vanilla</option>
+                        <option value="icingStrawberry">Strawberry</option>
                     </select>
-                    <label>Label</label>
-                    <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                    <label>Decor</label>
+                    <select name="decor" id="decor" class="browser-default">
+                        <option value="" disabled selected>Choose Type of Decor</option>
+                        <option value="decorRainbow">Sprinkles</option>
+                        <option value="decorCookie">Cookies</option>
                     </select>
                 </div>
                 <div class="col s12 m4">
@@ -141,7 +146,11 @@
                     <h4>Your Choice</h4>
                     <div class="card">
                         <div class="card-image">
-                            <img src="images/sample-1.jpg">
+                          <div id="cupcake" ></div>
+                            <img id="trans" src="images/trans.png" alt="filler image">
+                            <img id="breadImg" src="" alt="Bread Image">
+                            <img id="icingImg" src="" alt="Icing Image">
+                            <img id="decorImg" src="" alt="Decor Image">
                             <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-action">
@@ -170,10 +179,11 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Credits</h5>
 
-
+            Template by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <br>
+            Styled by Sophia Bebko.
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
@@ -196,17 +206,18 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+       <div class="container">
+        .
+       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" defer></script>
+  <script src="js/materialize.js" defer></script>
+  <script src="js/init.js" defer></script>
+  <script src="js/app.js" type="module"></script>
 
   </body>
 </html>
