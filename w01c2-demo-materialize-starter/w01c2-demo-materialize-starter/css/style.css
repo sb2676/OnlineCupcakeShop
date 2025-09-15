@@ -118,19 +118,26 @@ html{
   scroll-behavior: smooth;
 }
 #trans{
-
+ position: absolute;
   z-index: 4;
 }
 #breadImg{
   position: absolute;
   z-index: 1;
+  top: 70px;
 }
 #icingImg{
+ 
   position: absolute;
   z-index: 2;
 }
 #decorImg{
+ 
   position: absolute;
   z-index: 3;
+}
+#cupcake{
+  position: relative;
+  height: 400px
 }
 
