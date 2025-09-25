@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sugar Cup Shop</title>
+  <!--
+  DISCLAIMER--
+  MOST OF THE CONTENT ON THIS PAGE IS AI-GENERATED.
+  ONLY THE CONTENT IS AI GENERATED.(images, icons, text.)
+  CSS, JS, AND HTML STRUCTURE IS EITHER FROM MATERIALIZE TEMPLATE OR CREATED BY ME.
+  -->
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+        <div class="navbar-fixed">
+            <nav class="navBar">
+                <div class="nav-wrapper">
+                    <a href="body" class="brand-logo center"><img src="assets/images/cupLogo.webp" alt="Cupcake Logo Picture" id="cupLogo"></a>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#shopping-cart">Shopping Cart</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="nav-mobile">
+            <li><a href="#about-us" data-label="aboutUs"></a></li>
+            <li><a href="#shopping-cart" data-label="shoppingCart"></a></li>
+            <li><a href="#contact-us" data-label="contactUs"></a></li>
+        </ul>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header" data-label="product"></h1>
+        <div class="row center">
+          <h5 class="header col s12 light" data-label="tagline1"></h5>
+        </div>
+        <div class="row center">
+          <a href="#shopping-cart" id="download-button" class="btnS" data-label="start"></a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/cupcake-1.png" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2><img class="icon" src="assets/images/cupCakeIcon.png" alt="Cupcake Icon"></h2>
+            <h5 class="center">Our Cupcakes</h5>
+            <p class="light" data-label="p1"></p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 ><img class="icon" src="assets/images/pplIcon.png" alt="person icon"></h2>
+            <h5 class="center">Our Team</h5>
+            <p class="light" data-label="p2"></p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+             <h2><img class="icon" src="assets/images/wrldIcon.png" alt="globe icon"></h2>
+            <h5 class="center">Our World</h5>
+            <p class="light" data-label="p3"></p>
+          </div>
+        </div>
+    
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light" data-label="tagline2"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img id="snapTo" src="assets/images/cupcake-2.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+    <!-- SHOPPING CART -->
+    <div id="shopping-cart" class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>A Bit About Us</h4>
+                    <p class="left-align light" data-label="p4">
+                    </p>
+                </div>
+                <div class="col s12 m4">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Select Your Item</h4>
+                    <label>Bread</label>
+                    <div id="div-selects" class="container-item">
+                      <select name="bread" id="bread" class="browser-default">
+                          <option value="" disabled selected>Choose Type of Bread</option>
+                      </select>
+                      <label>Icing</label>
+                      <select name="icing" id="icing" class="browser-default">
+                          <option value="" disabled selected>Choose Type of Icing</option>
+                      </select>
+                      <label>Decor</label>
+                      <select name="decor" id="decor" class="browser-default">
+                          <option value="" disabled selected>Choose Type of Decor</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Your Choice</h4>
+                    <div class="card">
+                        <div class="card-image">
+                          <div id="cupcake">
+                            <img id="breadImg" src="assets/images/trans.png" alt="">
+                            <img id="icingImg" src="" alt="">
+                            <img id="decorImg" src="" alt="">
+                          </div>
+                        
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- PARALLAX -->
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light" data-label="tagline4"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="assets/images/cupcake-3.png"></div>
+        </div>
+
+  <footer class="navBar">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Credits</h5>
+
+            Template by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <br>
+            Styled by Sophia Bebko.
+        </div>
+       
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+       <div class="container">
+        .
+       </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" defer></script>
+  <script src="assets/js/materialize.js" defer></script>
+  <script src="assets/js/init.js" defer></script>
+  <script src="assets/js/app.js" type="module"></script>
+
+  </body>
+</html>

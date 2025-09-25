@@ -1,0 +1,15 @@
+//create a dictionary of values and keys of the selects
+//export const selects{
+/**
+ * A JS object that holds the data for the selects. 
+ * The select data can be structured in different ways. Here, a JS object is used.
+ * 
+ * In JavaScript, an object is a standalone entity, with properties. A property 
+ * of an object can be explained as a variable that is attached to the object.
+ * A property may be an identifier, OR a Number OR a String.
+ */
+export const selects = {//JS Object which properties are strings
+    "bread": ["breadVanilla", "breadChocolate", "breadVelvet"],
+    "icing": ["icingVanilla", "icingStrawberry"],
+    "decor": ["decorRainbow", "decorCookie"]
+};
