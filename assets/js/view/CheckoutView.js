@@ -22,6 +22,7 @@ export class CheckoutView {
      * });
      */
     createInputs(data) {
+        
         for (let property in data) {
             this.form.querySelector('#div-inputs').insertAdjacentHTML("beforeend", `
                 <label>${property}: </label>
@@ -29,6 +30,7 @@ export class CheckoutView {
                 <br><span class="error-message" name="${property}"></span><br>
             `);
         }
+         this.inputs = Array.from(this.form.querySelectorAll('input[type=text]'));
        
     }
 

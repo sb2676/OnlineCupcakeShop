@@ -40,7 +40,8 @@ export class CupcakeView{
             const labelName = element.dataset.label;
             if (this.labels[labelName]) {
                 element.textContent = this.labels[labelName];
-            }}        );
+            }}        
+        );
     }
           
         
