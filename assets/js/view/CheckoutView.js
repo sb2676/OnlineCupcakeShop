@@ -74,11 +74,14 @@ export class CheckoutView {
         }
     }
 
+    
     /**
      * @param {string} inputName - The name of the input field.
      * @param {string} inputValue - The value to validate.
      * @returns {boolean} - True if the input is valid, false otherwise.
      */
+    
+   
     isValid(inputName, inputValue) {
         let result = this.validateInput(inputName, inputValue);        
         let ok = result === "";
@@ -90,4 +93,5 @@ export class CheckoutView {
         this.toggle(input, result, ok);
         return ok;
     }
+    
 }
