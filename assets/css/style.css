@@ -30,6 +30,7 @@ p {
   }
 
 @media only screen and (max-width : 992px) {
+  
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -41,10 +42,11 @@ p {
     top: 0px;
     left: 0px;
   }
-  
+
 }
 
 @media only screen and (max-width : 600px) {
+
   #index-banner .section {
     top: 0;
   }
@@ -114,6 +116,10 @@ p{
   text-shadow: 2px 3px 6px rgba(141, 61, 61, 0.145);
   font-size: 40px;
 }
+.select-wrapper .caret{
+  visibility: hidden;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -127,18 +133,19 @@ html{
   top: 70px;
 }
 #icingImg{
- 
   position: absolute;
   z-index: 2;
 }
 #decorImg{
- 
   position: absolute;
   z-index: 3;
 }
 #cupcake{
   position: relative;
-  height: 400px
+  height: 450px
+}
+.select-wrapper{
+ 
 }
 fieldset{
   width: 50%;

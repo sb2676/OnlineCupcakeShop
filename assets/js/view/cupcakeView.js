@@ -15,7 +15,8 @@ export class CupcakeView{
      */
 
     createSelect(name, options) {
-        let selectsDiv = document.querySelector("#div-selects");
+        console.log(name, options);
+        let selectsDiv = document.querySelector('#div-selects');
 
         selectsDiv.insertAdjacentHTML("beforeend", `
             <select name="${name}">
@@ -24,12 +25,21 @@ export class CupcakeView{
         `);
 
         let select = selectsDiv.querySelector(`[name=${name}]`);
+        // safety check
         
+        if (!select) {
+            console.error('select element not found for', name);
+            return;
+        }
         options.forEach((option)=>{
             select.insertAdjacentHTML("beforeend", `
                 <option value=${option}>${option}</option>
             `);
         });
+                // initialize Materialize select if available so it renders correctly
+        if (window.M && M.FormSelect && typeof M.FormSelect.init === 'function') {
+            M.FormSelect.init(select);
+        }
 
         this.selects.push(select);
     }

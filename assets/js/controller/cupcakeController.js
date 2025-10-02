@@ -5,8 +5,7 @@
 //in event handeler it should read input, update the model and update the view
 
 export class CupcakeController {
-    /**
-     * Creates an object representing the animal controller.
+    /*
      * 
      * @param {type} model - The model the controller interacts with.
      * @param {type} view - The view the controller interatcs with.
@@ -28,8 +27,6 @@ export class CupcakeController {
             select.addEventListener("change", this.handleSelectChange);
         });
 
-        const [bread, icing, decor] = this.model.getValues();
-        this.view.renderCupcake(bread, icing, decor);
     }
 
  /**
@@ -48,6 +45,7 @@ export class CupcakeController {
         
         const [bread, icing, decor] = this.model.getValues();
         this.view.renderCupcake(bread, icing, decor);
+        
     }
 
 }

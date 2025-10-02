@@ -30,7 +30,9 @@ export class CupcakeModel{
      * @returns {Array} array of property names (strings)
      */
 
+   
     getProperties() {
+        console.log(this.#selects)
         return Object.keys(this);
     }
     
@@ -42,6 +44,7 @@ export class CupcakeModel{
      */
 
     getValues() {
+
         return Object.values(this);
     }
     
@@ -51,7 +54,9 @@ export class CupcakeModel{
      * @param {String} name - the name of the select element
      * @returns {Array} array of select's options (strings)
      */
+    
     getOptions(name) {
+        console.log(name)
         // 1. extract the data from the external resource (dataSource).
         let options = this.#selects[name];
 

@@ -49,6 +49,7 @@ class App{
                 const {CupcakeView} = await import('./view/cupcakeView.js')
                 const {selects} = await import('../data/select.en.js');
                 const {labels} = await import('../data/labels.en.js');
+                console.log({selects, labels});
                 new CupcakeController(new CupcakeModel(selects), new CupcakeView(labels));
                 break;
             case 'checkout.html':
