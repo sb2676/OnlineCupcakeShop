@@ -140,13 +140,11 @@ html{
   position: absolute;
   z-index: 3;
 }
-#cupcake{
+#cupcake , .card-image{
   position: relative;
   height: 450px
 }
-.select-wrapper{
- 
-}
+
 fieldset{
   width: 50%;
   min-height: 300px;

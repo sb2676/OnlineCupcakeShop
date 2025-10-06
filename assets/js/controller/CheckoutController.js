@@ -13,13 +13,13 @@ export class CheckoutController extends Controller {
 
         this.view.createInputs(this.model.getInputData());
 
-        // register one event handler for all input 'change' events
+        // egister event handler for all input events
         this.view.inputs.forEach((input) => {
             input.addEventListener("change", this.handleInputChange);
         });
 
         // register form submit handler
-        this.view.form.addEventListener("submit", this.handleFormSubmit);
+        this.view.form.addEventListener("submit",this.handleFormSubmit);
     }
 
     /**
@@ -33,9 +33,28 @@ export class CheckoutController extends Controller {
      */
     handleInputChange = (event) => {
         let input = event.target;
-        if(!this.view.isValid(input.name, input.value)) return;
+        
+        if(!this.view.isValid(input.name, input.value)){return; };
         this.model[input.name] = input.value;
         this.model.store();
     }
+
+    handleFormSubmit = (event) => {
+        // Example: Validate all inputs (you can customize this)
+        let isFormValid = true;
+
+        this.view.inputs.forEach(input => {
+            if (!this.view.isValid(input.name, input.value)) {
+            isFormValid = false;
+            // Optionally, show errors here
+            }
+        });
+
+        if (!isFormValid) {
+            event.preventDefault();
+            console.log("Form submission blocked due to invalid inputs");
+        }
+        // Otherwise, submission proceeds normally
+        }
 
 }
