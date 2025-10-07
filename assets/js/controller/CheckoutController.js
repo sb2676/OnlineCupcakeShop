@@ -52,7 +52,6 @@ export class CheckoutController extends Controller {
 
         if (!isFormValid) {
             event.preventDefault();
-            console.log("Form submission blocked due to invalid inputs");
         }
         // Otherwise, submission proceeds normally
         }
